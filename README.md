@@ -14,3 +14,9 @@ Also if you get undefined reference warnings, see :
 
 http://blog.inventic.eu/2014/01/qt-on-osx-maverick-undefined-symbols-for-architecture-x86_64/
 http://stackoverflow.com/questions/20342896/solved-qt5-1-qt5-2-mac-os-10-9-mavericks-xcode-5-0-2-undefined-symbols
+
+Edit the .pro file, and add:
+
+  QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.9
+
+Then run qmake && make clean && make     
